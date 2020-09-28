@@ -39,6 +39,7 @@
 -------
 
 <br />
+
 #### Nonamemo 프로토타이핑 (ing)
 
 ##### Figma를 통해 Prototyping 진행중
@@ -46,6 +47,7 @@
 
 
 <br />
+
 #### DB Schema 및 Architecture (ing)
 
 추석때까지 끝낸다아아아아ㅏ아앗!!!!!!!!!!!!
