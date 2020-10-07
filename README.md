@@ -48,6 +48,50 @@
 
 <br />
 
+20201003 Meeting 진행
+
+> 노나메모 기능 수정
+> 
+>> [주소창 옆 shortcut icon 클릭시 팝업]
+>> 1. 사이트 URL 과 자신의 의견(메모) clip하여 남김
+>> 2. 다른 유저에게 모두 공유
+>> 3. 유저의 의견 history를 볼 수 있음
+>> star 마크 수에 따라 정렬
+>> 
+
+
 #### DB Schema 및 Architecture (ing)
 
-추석때까지 끝낸다아아아아ㅏ아앗!!!!!!!!!!!!
+```
+account
+{
+    id:,
+    email:,
+    pwd:,
+    reg_dtm:,
+}
+
+memo
+{
+    uid:,
+    id:,
+    cnt:,
+    like_uid:[id1,id2],
+    is_public:,
+    reg_dtm:,
+    mod_dtm:,
+    keyword:[],
+}
+
+```
+
+<br/>
+
+##### MQ로 Kafka 이용 
+
+- Like로 인기있는 메모들 실시간 업데이트 
+
+
+
+
+
