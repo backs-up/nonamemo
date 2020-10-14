@@ -11,7 +11,7 @@ import java.util.List;
 
 @Getter
 @Builder
-@Document(collation = "memos")
+@Document(collection = "memos")
 public class Memo {
 
     @Id
