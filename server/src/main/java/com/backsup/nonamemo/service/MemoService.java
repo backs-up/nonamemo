@@ -10,10 +10,9 @@ import java.util.List;
 @Service
 public class MemoService {
 
-    MongoTemplate mongoTemplate;
+    private final MongoTemplate mongoTemplate;
 
-    @Autowired
-    public void setMongoTemplate(MongoTemplate mongoTemplate){
+    public MemoService(MongoTemplate mongoTemplate) {
         this.mongoTemplate = mongoTemplate;
     }
 
