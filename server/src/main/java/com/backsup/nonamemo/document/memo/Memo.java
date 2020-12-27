@@ -1,6 +1,6 @@
 package com.backsup.nonamemo.document.memo;
 
-import com.backsup.nonamemo.dto.MemoDTO;
+import com.backsup.nonamemo.dto.memo.MemoDTO;
 import lombok.Builder;
 import lombok.Getter;
 import org.springframework.data.annotation.Id;

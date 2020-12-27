@@ -1,7 +1,7 @@
 package com.backsup.nonamemo.service;
 
 import com.backsup.nonamemo.document.memo.Memo;
-import com.backsup.nonamemo.dto.MemoDTO;
+import com.backsup.nonamemo.dto.memo.MemoDTO;
 import com.backsup.nonamemo.repository.MemoRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;

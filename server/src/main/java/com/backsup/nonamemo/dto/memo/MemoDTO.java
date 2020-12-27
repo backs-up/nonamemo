@@ -1,4 +1,4 @@
-package com.backsup.nonamemo.dto;
+package com.backsup.nonamemo.dto.memo;
 
 import com.backsup.nonamemo.document.memo.Memo;
 import lombok.Getter;

@@ -1,6 +1,6 @@
 package com.backsup.nonamemo.controller;
 
-import com.backsup.nonamemo.dto.MemoDTO;
+import com.backsup.nonamemo.dto.memo.MemoDTO;
 import com.backsup.nonamemo.service.MemoService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
