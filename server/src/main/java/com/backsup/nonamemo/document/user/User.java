@@ -1,5 +1,6 @@
 package com.backsup.nonamemo.document.user;
 
+import com.backsup.nonamemo.dto.user.SignUpDTO;
 import lombok.Builder;
 import lombok.Getter;
 import org.springframework.data.annotation.Id;
@@ -22,4 +23,12 @@ public class User {
     private String nickname;
 
     private LocalDateTime createdAt;
+
+    public static User newInstance(SignUpDTO signUpDTO) {
+        return User.builder()
+                .username(signUpDTO.getUsername())
+                .nickname(signUpDTO.getNickname())
+                .password(signUpDTO.getPassword())
+                .build();
+    }
 }

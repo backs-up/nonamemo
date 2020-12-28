@@ -1,4 +1,4 @@
-package com.backsup.nonamemo.config;
+package com.backsup.nonamemo.config.security;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
