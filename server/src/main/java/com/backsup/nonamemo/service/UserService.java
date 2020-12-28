@@ -1,6 +1,7 @@
 package com.backsup.nonamemo.service;
 
 
+import com.backsup.nonamemo.config.security.JwtProvider;
 import com.backsup.nonamemo.document.user.User;
 import com.backsup.nonamemo.dto.user.SignInDTO;
 import com.backsup.nonamemo.dto.user.SignUpDTO;
@@ -19,6 +20,7 @@ public class UserService {
 
     private final PasswordEncoder passwordEncoder;
     private final UserRepository userRepository;
+    private final JwtProvider jwtProvider;
 
     public boolean signup(SignUpDTO signUpDTO) {
         String password = passwordEncoder.encode(signUpDTO.getPassword());
@@ -42,7 +44,9 @@ public class UserService {
             throw new SignInFailException();
         }
 
-        return UserDTO.create(user);
+        String token = jwtProvider.createToken(user.getId());
+
+        return UserDTO.create(token, user);
     }
 
 }
